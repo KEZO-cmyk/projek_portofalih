@@ -1,0 +1,44 @@
+{
+    "research": [
+        {
+            "title": "Proposal Skripsi",
+            "category": "Penelitian",
+            "description": "Efektivitas Model Inquiry Lesson berbasis STEM dalam meningkatkan hasil belajar siswa.",
+            "image": "assets/images/research/proposal.jpg",
+            "file": "assets/document/Proposal.pdf",
+            "download": "assets/document/Proposal.pdf"
+        },
+        {
+            "title": "Artikel Ilmiah",
+            "category": "Publikasi",
+            "description": "Artikel pada bidang pendidikan sains dan lingkungan untuk jurnal ilmiah.",
+            "image": "assets/images/research/artikel.jpg",
+            "file": "assets/document/Artikel.pdf",
+            "download": "assets/document/Artikel.pdf"
+        },
+        {
+            "title": "Modul Pembelajaran IPA",
+            "category": "Karya",
+            "description": "Modul interaktif untuk pembelajaran IPA SMP berbasis inkuiri.",
+            "image": "assets/images/research/modul.jpg",
+            "file": "assets/document/Modul.pdf",
+            "download": "assets/document/Modul.pdf"
+        },
+        {
+            "title": "LKPD IPA Terpadu",
+            "category": "Media",
+            "description": "Lembar Kerja Peserta Didik berbasis inkuiri dan berpikir kritis.",
+            "image": "assets/images/research/lkpd.jpg",
+            "file": "assets/document/LKPD.pdf",
+            "download": "assets/document/LKPD.pdf"
+        },
+        {
+            "title": "Media Digital Learning",
+            "category": "Projek",
+            "description": "Pengembangan media pembelajaran berbasis teknologi untuk pembelajaran jarak jauh.",
+            "image": "assets/images/research/digital.jpg",
+            "file": "#",
+            "download": "#"
+        }
+    ]
+}

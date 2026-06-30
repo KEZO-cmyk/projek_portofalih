@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "whatsapp": {
+      "number": "089514406544",
+      "link": "https://wa.me/6289514406544"
+    },
+    "email": "auliyarahma021@gmail.com",
+    "address": {
+      "street": "Ds. Troso RT 01 / RW 10",
+      "district": "Kec. Pecangaan",
+      "regency": "Kab. Jepara",
+      "full": "Ds. Troso RT 01 / RW 10, Kec. Pecangaan, Kab. Jepara"
+    },
+    "social": {
+      "instagram": "#",
+      "facebook": "#",
+      "linkedin": "#",
+      "github": "#"
+    },
+    "maps": {
+      "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.1!2d110.7!3d-6.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDInMDAuMCJTIDExMMKwNDInMDAuMCJF!5e0!3m2!1sid!2sid!4v1",
+      "link": "https://maps.google.com/?q=Ds.+Troso,+Pecangaan,+Jepara"
+    }
+  }
+}

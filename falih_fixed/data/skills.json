@@ -1,0 +1,93 @@
+{
+    "science": [
+        {
+            "name": "Biologi",
+            "level": 90,
+            "icon": "🧬"
+        },
+        {
+            "name": "Fisika",
+            "level": 85,
+            "icon": "⚛️"
+        },
+        {
+            "name": "Kimia",
+            "level": 85,
+            "icon": "⚗️"
+        },
+        {
+            "name": "IPA Terpadu",
+            "level": 88,
+            "icon": "🔬"
+        },
+        {
+            "name": "Microteaching",
+            "level": 90,
+            "icon": "👨‍🏫"
+        },
+        {
+            "name": "Laboratorium",
+            "level": 92,
+            "icon": "🧪"
+        },
+        {
+            "name": "Media Pembelajaran",
+            "level": 87,
+            "icon": "💻"
+        },
+        {
+            "name": "STEM Education",
+            "level": 90,
+            "icon": "🚀"
+        }
+    ],
+    "softSkills": [
+        {
+            "name": "Leadership",
+            "level": 85,
+            "icon": "👑"
+        },
+        {
+            "name": "Public Speaking",
+            "level": 80,
+            "icon": "🎤"
+        },
+        {
+            "name": "Teamwork",
+            "level": 90,
+            "icon": "🤝"
+        },
+        {
+            "name": "Problem Solving",
+            "level": 85,
+            "icon": "🧩"
+        }
+    ],
+    "technical": [
+        {
+            "name": "Microsoft Office",
+            "level": 90,
+            "icon": "📊"
+        },
+        {
+            "name": "Canva",
+            "level": 85,
+            "icon": "🎨"
+        },
+        {
+            "name": "Google Workspace",
+            "level": 88,
+            "icon": "📧"
+        },
+        {
+            "name": "Research",
+            "level": 85,
+            "icon": "🔍"
+        },
+        {
+            "name": "Scientific Writing",
+            "level": 80,
+            "icon": "✍️"
+        }
+    ]
+}

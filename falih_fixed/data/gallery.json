@@ -1,0 +1,52 @@
+{
+    "gallery": [
+        {
+            "title": "Praktikum Biologi",
+            "category": "practicum",
+            "image": "assets/images/gallery/praktikum1.jpg",
+            "thumbnail": "assets/images/gallery/praktikum1-thumb.jpg"
+        },
+        {
+            "title": "Teaching Practice",
+            "category": "teaching",
+            "image": "assets/images/gallery/teaching1.jpg",
+            "thumbnail": "assets/images/gallery/teaching1-thumb.jpg"
+        },
+        {
+            "title": "Penelitian Lapangan",
+            "category": "research",
+            "image": "assets/images/gallery/research1.jpg",
+            "thumbnail": "assets/images/gallery/research1-thumb.jpg"
+        },
+        {
+            "title": "Kegiatan Organisasi",
+            "category": "organization",
+            "image": "assets/images/gallery/org1.jpg",
+            "thumbnail": "assets/images/gallery/org1-thumb.jpg"
+        },
+        {
+            "title": "Kegiatan Akademik",
+            "category": "academic",
+            "image": "assets/images/gallery/academic1.jpg",
+            "thumbnail": "assets/images/gallery/academic1-thumb.jpg"
+        },
+        {
+            "title": "Praktikum Kimia",
+            "category": "practicum",
+            "image": "assets/images/gallery/praktikum2.jpg",
+            "thumbnail": "assets/images/gallery/praktikum2-thumb.jpg"
+        },
+        {
+            "title": "Microteaching",
+            "category": "teaching",
+            "image": "assets/images/gallery/teaching2.jpg",
+            "thumbnail": "assets/images/gallery/teaching2-thumb.jpg"
+        },
+        {
+            "title": "Workshop STEM",
+            "category": "research",
+            "image": "assets/images/gallery/research2.jpg",
+            "thumbnail": "assets/images/gallery/research2-thumb.jpg"
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio — Falih Aulia Rahma</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="portfolio">
+    <div id="loading-screen"><div class="loading-content"><div class="loading-circle"></div><p class="loading-text">Memuat...</p></div></div>
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-jp">一期一会</span>
+            <span class="brand-name">FALIHAULIA</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="about.html" class="nav-link">Tentang</a>
+            <a href="education.html" class="nav-link">Pendidikan</a>
+            <a href="skills.html" class="nav-link">Kompetensi</a>
+            <a href="portfolio.html" class="nav-link active">Portofolio</a>
+            <a href="gallery.html" class="nav-link">Galeri</a>
+            <a href="contact.html" class="nav-link">Kontak</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <span class="section-tag" data-aos="fade-up">PORTOFOLIO</span>
+                <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Karya &amp; Projek Terbaik</h1>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="penelitian">Penelitian</button>
+                    <button class="filter-btn" data-filter="karya">Karya</button>
+                    <button class="filter-btn" data-filter="publikasi">Publikasi</button>
+                    <button class="filter-btn" data-filter="media">Media</button>
+                    <button class="filter-btn" data-filter="projek">Projek</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-jp">一期一会</span>
+                <p class="footer-motto">"Belajar, Bertumbuh, dan Memberi Manfaat Melalui Ilmu Pengetahuan serta Pengabdian."</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Falih Aulia Rahma. All Rights Reserved.</p>
+            <p class="footer-credit">Designed with <span class="heart">♥</span> for education &amp; future.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/loading.js"></script>
+    <script>
+    const portfolioData = [
+        {id:1, category:'penelitian', title:'Proposal Skripsi', description:'Efektivitas Model Inquiry Lesson berbasis STEM untuk meningkatkan kemampuan berpikir kritis siswa SMP.', img:'img/projek.jpeg', progress: 75},
+        {id:2, category:'karya', title:'Modul Pembelajaran IPA', description:'Modul interaktif berbasis inkuiri untuk pembelajaran IPA di tingkat SMP.', img:'img/kegiatan.jpeg', progress: 60},
+        {id:3, category:'publikasi', title:'Artikel Ilmiah', description:'Artikel pada bidang pendidikan sains dan lingkungan hidup.', img:'img/oservasi.jpeg', progress: 80},
+        {id:4, category:'media', title:'LKPD IPA Terpadu', description:'Lembar Kerja Peserta Didik berbasis inkuiri dan berpikir kritis tingkat SMP.', img:'img/sema.jpeg', progress: 70},
+        {id:5, category:'projek', title:'Media Digital Learning', description:'Pengembangan media pembelajaran berbasis teknologi untuk pendidikan sains.', img:'img/pramuka.jpeg', progress: 50}
+    ];
+
+    const container = document.getElementById('portfolio-container');
+
+    function renderPortfolio(filter = 'all') {
+        container.innerHTML = '';
+        const filtered = filter === 'all' ? portfolioData : portfolioData.filter(i => i.category === filter);
+        filtered.forEach((item, index) => {
+            const card = document.createElement('div');
+            card.className = 'portfolio-card';
+            card.setAttribute('data-aos', 'fade-up');
+            card.setAttribute('data-aos-delay', index * 80);
+            card.innerHTML = `
+                <div class="portfolio-image">
+                    <img src="${item.img}" alt="${item.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=portfolio-placeholder style=width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem>📄</div>'">
+                    <div class="portfolio-overlay">
+                        <span class="btn btn-primary" style="pointer-events:none">Lihat Detail</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-category">${item.category.toUpperCase()}</span>
+                    <h3 class="portfolio-title">${item.title}</h3>
+                    <p class="portfolio-description">${item.description}</p>
+                    <div class="portfolio-progress">
+                        <div class="progress-bar"><div class="progress-fill" style="width:${item.progress}%"></div></div>
+                        <span class="progress-text">${item.progress}%</span>
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+        if (typeof AOS !== 'undefined') AOS.refresh();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        renderPortfolio();
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderPortfolio(btn.dataset.filter);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

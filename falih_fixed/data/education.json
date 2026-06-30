@@ -1,0 +1,28 @@
+{
+    "education": [
+        {
+            "institution": "SDN 5 Troso Pecangaan Jepara",
+            "year": "2009 - 2015",
+            "detail": "Sekolah Dasar",
+            "icon": "📚"
+        },
+        {
+            "institution": "SMP Walisongo Pecangaan Jepara",
+            "year": "2015 - 2018",
+            "detail": "Sekolah Menengah Pertama",
+            "icon": "🎓"
+        },
+        {
+            "institution": "MA Walisongo Pecangaan Jepara",
+            "year": "2018 - 2021",
+            "detail": "Sekolah Menengah Atas",
+            "icon": "📖"
+        },
+        {
+            "institution": "UIN Salatiga",
+            "year": "2023 - Sekarang",
+            "detail": "Tadris Ilmu Pengetahuan Alam",
+            "icon": "🔬"
+        }
+    ]
+}

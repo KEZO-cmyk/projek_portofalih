@@ -1,0 +1,32 @@
+{
+    "experience": [
+        {
+            "organization": "HMPS Tadris IPA",
+            "year": "2025",
+            "role": "Anggota Aktif",
+            "description": "Berkontribusi dalam pengembangan program studi dan kegiatan kemahasiswaan di bidang pendidikan IPA.",
+            "icon": "🏛️"
+        },
+        {
+            "organization": "PMII Rayon Mathori Abdul Jalil",
+            "year": "2025",
+            "role": "Anggota",
+            "description": "Aktif dalam organisasi keislaman dan pengembangan intelektual mahasiswa.",
+            "icon": "🌟"
+        },
+        {
+            "organization": "LSO Teater Lintang Songo",
+            "year": "2025",
+            "role": "Anggota",
+            "description": "Mengembangkan keterampilan seni pertunjukan dan ekspresi diri melalui teater.",
+            "icon": "🎭"
+        },
+        {
+            "organization": "SEMA FTIK",
+            "year": "2026",
+            "role": "Anggota",
+            "description": "Berpartisipasi dalam senat mahasiswa fakultas untuk pengembangan kampus.",
+            "icon": "🎓"
+        }
+    ]
+}

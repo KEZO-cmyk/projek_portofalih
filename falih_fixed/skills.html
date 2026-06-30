@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompetensi — Falih Aulia Rahma</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="skills">
+    <div id="loading-screen"><div class="loading-content"><div class="loading-circle"></div><p class="loading-text">Memuat...</p></div></div>
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-jp">一期一会</span>
+            <span class="brand-name">FALIHAULIA</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="about.html" class="nav-link">Tentang</a>
+            <a href="education.html" class="nav-link">Pendidikan</a>
+            <a href="skills.html" class="nav-link active">Kompetensi</a>
+            <a href="portfolio.html" class="nav-link">Portofolio</a>
+            <a href="gallery.html" class="nav-link">Galeri</a>
+            <a href="contact.html" class="nav-link">Kontak</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <span class="section-tag" data-aos="fade-up">KOMPETENSI</span>
+                <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Keahlian &amp; Kompetensi</h1>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <div class="skills-grid" id="skills-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-jp">一期一会</span>
+                <p class="footer-motto">"Belajar, Bertumbuh, dan Memberi Manfaat Melalui Ilmu Pengetahuan serta Pengabdian."</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="portfolio.html">Portofolio</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Falih Aulia Rahma. All Rights Reserved.</p>
+            <p class="footer-credit">Designed with <span class="heart">♥</span> for education &amp; future.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/loading.js"></script>
+    <script>
+    const skillsData = {
+        science: [
+            {name:"Biologi",level:90,icon:"🧬"},{name:"Fisika",level:85,icon:"⚛️"},
+            {name:"Kimia",level:85,icon:"⚗️"},{name:"IPA Terpadu",level:88,icon:"🔬"},
+            {name:"Microteaching",level:90,icon:"👨‍🏫"},{name:"Laboratorium",level:92,icon:"🧪"},
+            {name:"Media Pembelajaran",level:87,icon:"💻"},{name:"STEM Education",level:90,icon:"🚀"}
+        ],
+        softSkills: [
+            {name:"Leadership",level:85,icon:"👑"},{name:"Public Speaking",level:80,icon:"🎤"},
+            {name:"Teamwork",level:90,icon:"🤝"},{name:"Problem Solving",level:85,icon:"🧩"}
+        ],
+        technical: [
+            {name:"Microsoft Office",level:90,icon:"📊"},{name:"Canva",level:85,icon:"🎨"},
+            {name:"Google Workspace",level:88,icon:"📧"},{name:"Research",level:85,icon:"🔍"},
+            {name:"Scientific Writing",level:80,icon:"✍️"}
+        ]
+    };
+
+    function createSkillCard(skill) {
+        return `<div class="skill-card" data-aos="fade-up">
+            <span class="skill-icon">${skill.icon}</span>
+            <h3 class="skill-name">${skill.name}</h3>
+            <div class="skill-bar"><div class="skill-progress" data-width="${skill.level}"></div></div>
+            <span class="skill-percent">${skill.level}%</span>
+        </div>`;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('skills-container');
+        const categories = [
+            {key:'science', title:'🔬 Science'},
+            {key:'softSkills', title:'🌟 Soft Skills'},
+            {key:'technical', title:'💻 Technical'}
+        ];
+        categories.forEach(cat => {
+            const sec = document.createElement('div');
+            sec.className = 'skills-category';
+            sec.innerHTML = `<h2 class="category-title">${cat.title}</h2><div class="skill-cards">${skillsData[cat.key].map(createSkillCard).join('')}</div>`;
+            container.appendChild(sec);
+        });
+
+        // Animate progress bars on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.skill-progress').forEach(bar => {
+                        bar.style.width = bar.getAttribute('data-width') + '%';
+                    });
+                }
+            });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('.skills-category').forEach(el => observer.observe(el));
+
+        if (typeof AOS !== 'undefined') AOS.refresh();
+    });
+    </script>
+</body>
+</html>
