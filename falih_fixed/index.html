@@ -22,10 +22,11 @@
 
     <div id="cursor" class="cursor"></div>
     <div id="cursor-follower" class="cursor-follower"></div>
+    <div id="sakura-container" aria-hidden="true"></div>
 
     <nav class="navbar" id="navbar">
         <div class="nav-brand">
-            <span class="brand-jp">一期一会</span>
+            <span class="brand-jp">ファリハウリア</span>
             <span class="brand-name">FALIHAULIA</span>
         </div>
         <div class="nav-menu" id="nav-menu">
@@ -53,7 +54,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-greeting">
-                    <span class="greeting-jp">#一期一会</span>
+                    <span class="greeting-jp">#ファリハウリア</span>
                     <p class="greeting-text">Halo,</p>
                     <h1 class="hero-title">
                         <span class="title-line">Saya</span>
@@ -106,7 +107,7 @@
                 </div>
                 <div class="hero-badge">
                     <span class="badge-text">METAMORPH</span>
-                    <span class="badge-year">2024</span>
+                    <span class="badge-year">2023</span>
                     <span class="badge-date">11.11</span>
                 </div>
             </div>
@@ -121,7 +122,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <span class="footer-jp">一期一会</span>
+                <span class="footer-jp">ファリハウリア</span>
                 <p class="footer-motto">"Belajar, Bertumbuh, dan Memberi Manfaat Melalui Ilmu Pengetahuan serta Pengabdian."</p>
             </div>
             <div class="footer-links">
@@ -145,5 +146,44 @@
     <script src="js/animation.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/loading.js"></script>
+    <script>
+    // === ANIMASI SAKURA ===
+    (function() {
+        const container = document.getElementById('sakura-container');
+        if (!container) return;
+
+        const COUNT = 18; // jumlah kelopak (bisa diubah)
+
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+
+            // posisi kiri acak
+            petal.style.left = Math.random() * 100 + 'vw';
+
+            // ukuran sedikit berbeda-beda
+            const size = 8 + Math.random() * 10;
+            petal.style.width  = size + 'px';
+            petal.style.height = (size * 1.3) + 'px';
+
+            // kecepatan jatuh berbeda-beda
+            const duration = 6 + Math.random() * 8;
+            petal.style.animationDuration = duration + 's';
+
+            // waktu mulai berbeda agar tidak serempak
+            const delay = -Math.random() * 10;
+            petal.style.animationDelay = delay + 's';
+
+            // transparansi acak
+            petal.style.opacity = 0.5 + Math.random() * 0.5;
+
+            container.appendChild(petal);
+        }
+
+        for (let i = 0; i < COUNT; i++) {
+            createPetal();
+        }
+    })();
+    </script>
 </body>
 </html>
